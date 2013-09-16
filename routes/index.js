@@ -9,10 +9,6 @@ var postmark = require("postmark")("a74fec21-8222-49e9-a896-641942e4177a");
 
 var numberOfBringers = 2;
 
-/*exports.index = function(req, res){
-	res.render('index', { title: 'Express' });
-};*/
-
 exports.index = function(req, res){
 	Employee.
 	find().
@@ -26,7 +22,9 @@ exports.index = function(req, res){
 };
 
 exports.create = function(req, res){
-	res.render('index');
+	res.render('index', {
+		title: "Opret"
+	});
 };
 
 exports.createEmployee = function(req, res){
