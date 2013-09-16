@@ -32,7 +32,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.post('/create', routes.create);
+app.post('/create', routes.createEmployee);
 app.get('/create', routes.create);
 app.get('/destroy/:id', routes.destroy);
 app.get('/markdelivery/:id', routes.markdelivery);
